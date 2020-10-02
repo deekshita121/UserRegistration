@@ -5,9 +5,9 @@ public class UserRegistration
      public static void main(String args[])
      {
           Scanner sc = new Scanner(System.in);
-          System.out.println("Enter the phone num of user with country code");
+          System.out.println("Enter the password of user");
           String phoneNum = sc.nextLine();
-          String check = "[91]{2}\\s[6-9]{1}[0-9]{9}$";
+          String check = "[a-zA-Z]{8,}";
           if(phoneNum.matches(check))
           System.out.println("Valid");
           else
