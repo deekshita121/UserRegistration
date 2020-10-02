@@ -6,9 +6,9 @@ public class UserRegistration
      {
           Scanner sc = new Scanner(System.in);
           System.out.println("Enter the password of user");
-          String phoneNum = sc.nextLine();
-          String check = "[a-zA-Z]{8,}";
-          if(phoneNum.matches(check))
+          String password = sc.nextLine();
+          String check = "(?=.*[A-Z])[a-zA-Z]{8,}";
+          if(password.matches(check))
           System.out.println("Valid");
           else
           System.out.println("Invalid");
