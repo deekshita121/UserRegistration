@@ -7,7 +7,7 @@ public class UserRegistration
           Scanner sc = new Scanner(System.in);
           System.out.println("Enter the password of user");
           String password = sc.nextLine();
-          String check = "(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}";
+          String check = "(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9!@$%&*?]{8,}$";
           if(password.matches(check))
           System.out.println("Valid");
           else
